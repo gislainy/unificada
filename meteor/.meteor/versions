@@ -44,7 +44,6 @@ livedata@1.0.15
 logging@1.0.9-faster-rebuild.0
 meteor@1.1.11-faster-rebuild.0
 meteor-base@1.0.1
-mfactory:admin-lte@0.0.2
 minifiers@1.1.8-faster-rebuild.0
 minimongo@1.0.10
 mobile-experience@1.0.1
