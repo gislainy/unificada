@@ -1,15 +1,15 @@
 
 FlowRouter.route('/', {
     action: function() {
-        FlowRouter.go('/dashboard1');
+        FlowRouter.go('/dashboard2');
     }
 });
 
-FlowRouter.route('/dashboard1', {
-    action: function() {
-        BlazeLayout.render("mainLayout", {content: "dashboard1"});
-    }
-});
+// FlowRouter.route('/dashboard1', {
+//     action: function() {
+//         BlazeLayout.render("mainLayout", {content: "dashboard1"});
+//     }
+// });
 
 FlowRouter.route('/dashboard2', {
     action: function() {
@@ -17,29 +17,29 @@ FlowRouter.route('/dashboard2', {
     }
 });
 
-FlowRouter.route('/dashboard3', {
-    action: function() {
-        BlazeLayout.render("mainLayout", {content: "dashboard3"});
-    }
-});
+// FlowRouter.route('/dashboard3', {
+//     action: function() {
+//         BlazeLayout.render("mainLayout", {content: "dashboard3"});
+//     }
+// });
 
-FlowRouter.route('/dashboard4', {
-    action: function() {
-        BlazeLayout.render("mainLayout", {content: "dashboard4"});
-    }
-});
+// FlowRouter.route('/dashboard4', {
+//     action: function() {
+//         BlazeLayout.render("mainLayout", {content: "dashboard4"});
+//     }
+// });
 
-FlowRouter.route('/dashboard4l', {
-    action: function() {
-        BlazeLayout.render("mainLayout", {content: "dashboard4l"});
-    }
-});
+// FlowRouter.route('/dashboard4l', {
+//     action: function() {
+//         BlazeLayout.render("mainLayout", {content: "dashboard4l"});
+//     }
+// });
 
-FlowRouter.route('/dashboard5', {
-    action: function() {
-        BlazeLayout.render("mainLayout", {content: "dashboard5"});
-    }
-});
+// FlowRouter.route('/dashboard5', {
+//     action: function() {
+//         BlazeLayout.render("mainLayout", {content: "dashboard5"});
+//     }
+// });
 
 //
 // Layouts route
