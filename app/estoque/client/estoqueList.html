@@ -1,0 +1,23 @@
+<template name="estoqueList">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Listagem do materiais' category='Estoque' }}
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            {{#each estoqueList}}
+            <div class="col-lg-3">
+                <div class="contact-box center-version estoqueItem">
+                    <a>
+                        <h3 class="m-b-xs"><strong>{{nome}}</strong></h3>
+                        <div class="font-bold">Quantidade: {{quantidade}}</div>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="row">
+            <button class="btn btn-sm btn-primary pull-right m-t-n-xs adicionar"> Adicionar material</button>
+        </div>
+    </div>
+</template>

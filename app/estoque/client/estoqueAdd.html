@@ -1,0 +1,24 @@
+<template name="estoqueAdd">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Listagem do materiais' category='Estoque' }}
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Adicioando novo material para estoque</h5>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    {{>estoqueForm this}}
+                </div>
+                <div class="row">
+                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs salvar "> Salvar</button>
+                    <button class="btn btn-sm btn-default pull-right m-t-n-xs cancelar"> Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

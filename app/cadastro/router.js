@@ -33,5 +33,23 @@ Router.route('/usuario', function () {
 	this.render('usuarioList');
 });
 
+Router.route('/estoque/add', function () {
+	this.render('estoqueAdd');
+});
+
+Router.route('/estoque', function () {
+	this.render('estoqueList');
+});
+
+Router.route('/estoque/:_estoqueId', {
+	template: 'estoqueEdit',
+	data: function () {
+		var estoqueId = this.params._estoqueId;
+		return _estoque.filter(function (a) {
+			return a._id === estoqueId;
+		})[0];
+	},
+});
+
 
 

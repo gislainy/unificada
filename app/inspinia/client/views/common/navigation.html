@@ -30,11 +30,14 @@
                     <a href="/"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Home</span></a>
                 </li>
                 <li class="{{isActivePath regex='usuarioList|atletaList'}}">
-                    <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label" data-i18n="nav.appviews">Cadastros</span></a>
+                    <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label" data-i18n="nav.cadastro">Cadastros</span></a>
                     <ul class="nav nav-second-level collapse {{isActivePath regex='contacts2' className='in'}}">
                         <li class="{{isActivePath regex='/atletaList'}}"><a href="atleta">Atletas</a></li>
                         <li class="{{isActivePath regex='/usuarioList'}}"><a href="usuario">Usuários</a></li>
-                        </ul>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='estoqueList'}}">
+                    <a href="/estoque"><i class="fa fa-desktop"></i> <span class="nav-label" data-i18n="nav.estoque">Estoque</span></a>
                 </li>
                 <!-- <li class="{{isActivePath regex='/layouts'}}">
                     <a href="layouts"><i class="fa fa-diamond"></i> <span class="nav-label" data-i18n="nav.layouts">Layouts</span> </a>
