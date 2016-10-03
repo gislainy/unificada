@@ -1,0 +1,29 @@
+<template name="atletaList">
+
+    <!-- Page heading -->
+    {{> pageHeading title='Atleta' category='Cadastro' }}
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            {{#each atletaList}}
+            <div class="col-lg-3">
+                <div class="contact-box center-version atletaItem">
+                    <a href="{{rotaAtleta}}">
+                        <img alt="image" class="img-circle" src="{{image}}">
+                        <h3 class="m-b-xs"><strong>{{nome}}</strong></h3>
+                        <div class="font-bold">{{curso}}</div>
+                        <address class="m-t-md">
+                            <strong>{{matricula}}</strong><br> {{email}}
+                            <br>
+                            <abbr title="Phone">P:</abbr> {{telefone}}
+                        </address>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="row">
+            <button class="btn btn-sm btn-primary pull-right m-t-n-xs adicionar"> Adicionar atleta</button>
+        </div>
+    </div>
+</template>
