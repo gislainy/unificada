@@ -10,6 +10,9 @@ Router.route('/login', function () {
 Router.route('/', function () {
 	this.render('home');
 });
+Router.route('/home', function () {
+	this.render('home');
+});
 
 Router.route('/atleta', function () {
 	this.render('atletaList');
@@ -29,9 +32,6 @@ Router.route('/atleta/:_atletaId', {
 	},
 });
 
-Router.route('/usuario', function () {
-	this.render('usuarioList');
-});
 
 Router.route('/estoque/add', function () {
 	this.render('estoqueAdd');
@@ -51,5 +51,21 @@ Router.route('/estoque/:_estoqueId', {
 	},
 });
 
+Router.route('/usuario', function () {
+	this.render('usuarioList');
+});
 
+Router.route('/usuario/add', function () {
+	this.render('usuarioAdd');
+});
+
+Router.route('/usuario/:_usuarioId', {
+	template: 'usuarioEdit',
+	data: function () {
+		var usuarioId = this.params._usuarioId;
+		return _usuario.filter(function (a) {
+			return a._id === usuarioId;
+		})[0];
+	},
+});
 
