@@ -27,24 +27,24 @@ _menu = [
 		template: 'home',
 		rota: '/',
 		nome: 'Home',
-		icone: 'fa fa-th-large',
+		icone: 'fa fa-home',
 	},
 	{
 		template: 'atletaList',
 		rota: '/atleta',
 		nome: 'Atleta',
-		icone: 'fa fa-desktop'
+		icone: 'fa fa-users'
 	},
 	{
 		template: 'usuarioList',
 		rota: '/usuario',
 		nome: 'Usuario',
-		icone: 'fa fa-diamond'
+		icone: 'fa fa-user'
 	},
 	{
 		template: 'estoqueList',
 		rota: '/estoque',
 		nome: 'Estoque',
-		icone: 'fa fa-envelope'
+		icone: 'fa fa-archive'
 	},
 ]
