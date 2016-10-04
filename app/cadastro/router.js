@@ -41,6 +41,10 @@ Router.route('/estoque', function () {
 	this.render('estoqueList');
 });
 
+Router.route('/modalidades', function () {
+	this.render('modalidades');
+});
+
 Router.route('/estoque/:_estoqueId', {
 	template: 'estoqueEdit',
 	data: function () {
