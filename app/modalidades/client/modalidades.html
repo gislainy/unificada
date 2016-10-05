@@ -1,5 +1,20 @@
 <template name="modalidades">
-    <p>Modalidades estarão aqui</p>
-    <p>jogos > relação de atletas/participantes</p>
-    <p>treino > materiais/participante (reserva - ver se está disponíveis e quem pegou) relação de atletas/participante para treino</p>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            {{#each modalidadesList}}
+            <div class="col-lg-3">
+                <div class="contact-box center-version modalidadeItem">
+                    <a href="{{rotaModalidade}}">
+                        <img alt="image" class="img-circle" src="{{image}}">
+                        <h3 class="m-b-xs"><strong>{{nome}}</strong></h3>
+                    </a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="row">
+            <button class="btn btn-sm btn-primary pull-right m-t-n-xs adicionar"> Adicionar modalidade</button>
+        </div>
+    </div>
 </template>
