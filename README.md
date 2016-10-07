@@ -20,3 +20,14 @@ cd unificada/app
 > meteor
 ```
 
+#Links para aprender um pouco de meteor
+
+Esse é um tutorial bom para ler que explica algumas coisas que estamos usando
+http://pt.discovermeteor.com/
+
+Esses são mais em inglês, mas ensina quase tudo sobre. 
+http://www.tutorialspoint.com/meteor/
+
+http://www.meteor-tutorial.org/book
+
+
