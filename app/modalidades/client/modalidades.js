@@ -23,27 +23,23 @@ _modalidades = [
 		_id: 'futebolDeCampoId',
 		nome: 'Futebol de campo'
 	},
-    {
+  {
 		_id: 'futebolDeSocietyId',
 		nome: 'Futebol de Society'
 	},
-    {
+  {
 		_id: 'handballId',
-		nome: 'Futebol de salão'
+		nome: 'Handball'
 	},
-    {
+  {
 		_id: 'xadrezId',
-		nome: 'Futebol de salão'
+		nome: 'xadrez'
 	},
-    {
+  {
 		_id: 'natacaoId',
-		nome: 'Futebol de salão'
+		nome: 'natação'
 	},
-    {
-		_id: 'natacaoId',
-		nome: 'Futebol de salão'
-	},
-    {
+  {
 		_id: 'petecaId',
 		nome: 'Peteca'
 	},
