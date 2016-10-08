@@ -6,11 +6,11 @@ Template.modalidades.helpers({
 
 Template.modalidades.events({
 	'click .adicionar': function (event) {
-		Router.go('/modalidade/add');
+		Router.go('/modalidades/add');
 	},
 	'click .modalidadeItem': function (event) {
 		var self = this;
-		Router.go('/modalidade/' + self._id);
+		Router.go('/modalidades/' + self._id);
 	}
 });
 

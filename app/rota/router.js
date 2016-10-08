@@ -32,6 +32,16 @@ Router.route('/atleta/:_atletaId', {
 	},
 });
 
+Router.route('/modalidades/:_id', {
+	template: 'modalidadesEdit',
+	data: function () {
+		var atletaId = this.params._atletaId;
+		return _atletas.filter(function (a) {
+			return a._id === atletaId;
+		})[0];
+	},
+});
+
 
 Router.route('/estoque/add', function () {
 	this.render('estoqueAdd');
