@@ -10,8 +10,12 @@ Router.route('/login', function () {
 Router.route('/', function () {
 	this.render('home');
 });
+
 Router.route('/home', function () {
 	this.render('home');
+});
+Router.route('/agenda', function () {
+	this.render('agendaList');
 });
 
 Router.route('/atleta', function () {

@@ -1,29 +1,15 @@
 <template name="home">
 	<div class="wrapper wrapper-content">
 		<div class="row">
-			<div class="col-lg-8">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="ibox float-e-margins">
-							<div class="ibox-title">
-								<h5>Lista de tarefa</h5>
-								{{>iboxTools}}
-							</div>
-							<div class="ibox-content">
-								<ul class="todo-list m-t small-list">
-									{{#each listaDeTarefa}}
-									<li>
-										<div class="checkbox">
-											<input type="checkbox" id="{{tarefaId}}" {{checked}}>
-											<label for="{{tarefaId}}">
-													{{nome}}
-												</label>
-										</div>
-									</li>
-									{{/each}}
-								</ul>
-							</div>
-						</div>
+			<div class="col-lg-12">
+				<div class="col-lg-12">
+					<div class="row">
+						
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						{{> listaTarefa}}
 					</div>
 				</div>
 			</div>

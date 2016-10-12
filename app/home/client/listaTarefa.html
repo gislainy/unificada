@@ -1,0 +1,22 @@
+<template name="listaTarefa">
+  <div class="ibox float-e-margins">
+    <div class="ibox-title">
+      <h5>Lista de tarefa</h5>
+      {{>iboxTools}}
+    </div>
+    <div class="ibox-content">
+      <ul class="todo-list m-t small-list">
+        {{#each listaDeTarefa}}
+        <li>
+          <div class="checkbox">
+            <input type="checkbox" id="{{tarefaId}}" {{checked}}>
+            <label for="{{tarefaId}}">
+              {{nome}}
+            </label>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</template>
