@@ -8,19 +8,19 @@
             <!-- End offCanvas menu toggle -->
 
             <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header logo-element">
+                    <div class="dropdown profile-element" style="font-size: 30px !important">
+                        UniSys
+                    </div>
+                    <div class="logo-element">
+                        UniSys
+                    </div>
+                </li>
                 {{#each menuNavigation}}
                 <li class="{{isActivePath regex='{{template}}'}}">
                     <a class="itemMenu"><i class="{{icone}}"></i> <span class="nav-label" data-i18n="nav.dashboard">{{nome}}</span></a>
                 </li>
                 {{/each}}
-                <li class="nav-header logo-element">
-                    <div class="dropdown profile-element" style="font-size: 30px !important">
-                        SGA
-                    </div>
-                    <div class="logo-element">
-                        SGA
-                    </div>
-                </li>
             </ul>
         </div>
     </nav>

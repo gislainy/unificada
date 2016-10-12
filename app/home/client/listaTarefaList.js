@@ -1,4 +1,4 @@
-Template.listaTarefa.helpers({
+Template.listaTarefaList.helpers({
 	listaDeTarefa() {
 		return _listaDeTarefa;
 	}
