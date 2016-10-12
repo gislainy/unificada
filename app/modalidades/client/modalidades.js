@@ -6,11 +6,11 @@ Template.modalidades.helpers({
 
 Template.modalidades.events({
 	'click .adicionar': function (event) {
-		Router.go('/modalidade/add');
+		Router.go('/modalidades/add');
 	},
 	'click .modalidadeItem': function (event) {
 		var self = this;
-		Router.go('/modalidade/' + self._id);
+		Router.go('/modalidades/' + self._id);
 	}
 });
 
@@ -23,27 +23,23 @@ _modalidades = [
 		_id: 'futebolDeCampoId',
 		nome: 'Futebol de campo'
 	},
-    {
+  {
 		_id: 'futebolDeSocietyId',
 		nome: 'Futebol de Society'
 	},
-    {
+  {
 		_id: 'handballId',
-		nome: 'Futebol de salão'
+		nome: 'Handball'
 	},
-    {
+  {
 		_id: 'xadrezId',
-		nome: 'Futebol de salão'
+		nome: 'xadrez'
 	},
-    {
+  {
 		_id: 'natacaoId',
-		nome: 'Futebol de salão'
+		nome: 'natação'
 	},
-    {
-		_id: 'natacaoId',
-		nome: 'Futebol de salão'
-	},
-    {
+  {
 		_id: 'petecaId',
 		nome: 'Peteca'
 	},
