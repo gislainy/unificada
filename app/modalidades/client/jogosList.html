@@ -1,0 +1,24 @@
+<template name="jogosList">
+<table class="table table-hover no-margins">
+    <thead>
+    <tr>
+        <th>Data</th>
+        <th>Hora</th>
+        <th>Local</th>
+        <th>Time A</th>
+        <th>Time B</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each jogosList}}
+    <tr>
+        <td><i class="fa fa-calendar-o"></i>{{data}}</td>
+        <td><i class="fa fa-clock-o"></i>{{hora}}</td>
+        <td>{{local}}</td>
+        <td>{{timea}}</td>
+        <td>{{timeb}}</td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>
+</template>
