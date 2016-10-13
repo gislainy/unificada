@@ -88,6 +88,6 @@ Router.route('/usuario/:_usuarioId', {
 });
 
 
-Router.route('/galeria', function () {
-	this.render('galeriaList');
-});
+// Router.route('/galeria', function () {
+// 	this.render('galeriaList');
+// });

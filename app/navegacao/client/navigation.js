@@ -59,10 +59,10 @@ _menu = [
 		nome: 'Modalidades',
 		icone: 'fa fa-futbol-o'
 	},
-	{
-		template: 'galeriaList',
-		rota: '/galeria',
-		nome: 'Galeria',
-		icone: 'fa fa-picture-o'
-	},
+	// {
+	// 	template: 'galeriaList',
+	// 	rota: '/galeria',
+	// 	nome: 'Galeria',
+	// 	icone: 'fa fa-picture-o'
+	// },
 ]
