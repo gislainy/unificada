@@ -1,4 +1,21 @@
 <template name="modalidadesAdd">
     {{> pageHeading title='Adicionar modalidade' category='modalidades'}}
-    {{> modalidadesForm}}
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Adicionando nova modalidade</h5>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    {{> modalidadesForm}}
+                </div>
+                <div class="row">
+                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs salvar "> Salvar</button>
+                    <button class="btn btn-sm btn-default pull-right m-t-n-xs cancelar"> Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>

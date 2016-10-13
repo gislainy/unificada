@@ -33,11 +33,11 @@ _modalidades = [
 	},
   {
 		_id: 'xadrezId',
-		nome: 'xadrez'
+		nome: 'Xadrez'
 	},
   {
 		_id: 'natacaoId',
-		nome: 'natação'
+		nome: 'Natação'
 	},
   {
 		_id: 'petecaId',
