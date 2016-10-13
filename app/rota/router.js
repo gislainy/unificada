@@ -14,6 +14,7 @@ Router.route('/', function () {
 Router.route('/home', function () {
 	this.render('home');
 });
+
 Router.route('/agenda', function () {
 	this.render('agendaList');
 });
