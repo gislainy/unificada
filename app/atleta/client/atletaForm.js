@@ -8,7 +8,7 @@ Template.atletaForm.helpers({
     return [
       {
         value: 1,
-        nome: 'Cinência da Computação'
+        nome: 'Ciência da Computação'
       },
       {
         value: 2,
