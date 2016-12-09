@@ -15,9 +15,6 @@ Router.route('/home', function () {
 	this.render('home');
 });
 
-Router.route('/agenda', function () {
-	this.render('agendaList');
-});
 
 Router.route('/atleta', function () {
 	this.render('atletaList');
@@ -31,27 +28,25 @@ Router.route('/atleta/:_atletaId', {
 	template: 'atletaEdit',
 	data: function () {
 		var atletaId = this.params._atletaId;
-		return _atletas.filter(function (a) {
-			return a._id === atletaId;
-		})[0];
-	},
+		return Atleta.find({_id: atletaId}).fetch()[0];
+	}
 });
 
-Router.route('/modalidades', function () {
-	this.render('modalidades');
+Router.route('/modalidade', function () {
+	this.render('modalidadeList');
 });
 
-Router.route('/modalidades/add', function () {
-	this.render('modalidades/add');
+Router.route('/modalidade/add', function () {
+	this.render('modalidadeAdd');
 });
 
-Router.route('/modalidades/:_id', {
-	template: 'modalidadesEdit',
+Router.route('/modalidade/:_id', {
+	template: 'modalidadeEdit',
 	data: function () {
 		var atletaId = this.params._atletaId;
-		return _atletas.filter(function (a) {
-			return a._id === atletaId;
-		})[0];
+		// return _atletas.filter(function (a) {
+		// 	return a._id === atletaId;
+		// })[0];
 	},
 });
 
@@ -69,9 +64,7 @@ Router.route('/estoque/:_estoqueId', {
 	template: 'estoqueEdit',
 	data: function () {
 		var estoqueId = this.params._estoqueId;
-		return _estoque.filter(function (a) {
-			return a._id === estoqueId;
-		})[0];
+		return Estoque.find({_id: estoqueId}).fetch()[0];
 	},
 });
 
@@ -92,8 +85,3 @@ Router.route('/usuario/:_usuarioId', {
 		})[0];
 	},
 });
-
-
-// Router.route('/galeria', function () {
-// 	this.render('galeriaList');
-// });

@@ -1,20 +1,20 @@
-Template.modalidades.helpers({
-	modalidadesList() {
-		return _modalidades;
+Template.modalidadeList.helpers({
+	modalidadeList() {
+		return _modalidade;
 	}
 });
 
-Template.modalidades.events({
+Template.modalidadeList.events({
 	'click .adicionar': function (event) {
-		Router.go('/modalidades/add');
+		Router.go('/modalidade/add');
 	},
 	'click .modalidadeItem': function (event) {
 		var self = this;
-		Router.go('/modalidades/' + self._id);
+		Router.go('/modalidade/' + self._id);
 	}
 });
 
-_modalidades = [
+_modalidade = [
 	{
 		_id: 'futebolDeSalaoId',
 		nome: 'Futebol de salão'

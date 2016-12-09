@@ -4,25 +4,25 @@
             <div class="form-group">
                 <label class="col-md-4 control-label" for="nome">Nome</label>
                 <div class="col-md-4">
-                    <input value="{{nome}}" name="nome" type="text" class="form-control input-md" required="">
+                    <input id="nomeAtleta" value="{{nome}}" name="nome" type="text" class="form-control input-md" required="">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-md-4 control-label" for="matricula">Matricula</label>
                 <div class="col-md-4">
-                    <input value="{{matricula}}" name="matricula" type="text" class="form-control input-md" required="">
+                    <input id="matriculaAtleta" value="{{matricula}}" name="matricula" type="text" class="form-control input-md" required="">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-md-4 control-label" for="telefone">Telefone</label>
                 <div class="col-md-4">
-                    <input value="{{telefone}}" name="telefone" type="text" class="form-control input-md">
+                    <input id="telefoneAtleta" value="{{telefone}}" name="telefone" type="text" class="form-control input-md">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-md-4 control-label" for="curso">Curso</label>
                 <div class="col-md-4">
-                    <select name="curso" class="form-control">
+                    <select id="cursoAtleta" name="curso" class="form-control">
                         {{#each cursosoptions this}}
                             <option value="{{value}}" {{cursoCod}}>{{nome}}</option>
                         {{/each}}
@@ -34,7 +34,7 @@
                 <div class="col-md-4">
                     <div class="input-group">
                         <span class="input-group-addon">@</span>
-                        <input value="{{email}}" name="email" class="form-control" type="text" required="">
+                        <input id="emailAtleta" value="{{email}}" name="email" class="form-control" type="text" required="">
                     </div>
                 </div>
             </div>

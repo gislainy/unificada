@@ -54,15 +54,9 @@ _menu = [
 		icone: 'fa fa-archive'
 	},
 	{
-		template: 'modalidades',
-		rota: '/modalidades',
-		nome: 'Modalidades',
+		template: 'modalidadeList',
+		rota: '/modalidade',
+		nome: 'Modalidade',
 		icone: 'fa fa-futbol-o'
 	},
-	// {
-	// 	template: 'galeriaList',
-	// 	rota: '/galeria',
-	// 	nome: 'Galeria',
-	// 	icone: 'fa fa-picture-o'
-	// },
 ]
