@@ -19,7 +19,7 @@ Template.jogoList.helpers({
 });
 
 Template.jogoList.events({
-	'click .excluir': function (event) {
+	'click .excluirJogo': function (event) {
 		var self = this;
 		Meteor.call('jogo.excluir', self._id);
 	},

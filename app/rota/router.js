@@ -68,23 +68,6 @@ Router.route('/modalidade/:_modalidadeId', {
 });
 
 
-Router.route('/estoque/add', function () {
-	this.render('estoqueAdd');
-});
-
-Router.route('/estoque', function () {
-	this.render('estoqueList');
-});
-
-
-Router.route('/estoque/:_estoqueId', {
-	template: 'estoqueEdit',
-	data: function () {
-		var estoqueId = this.params._estoqueId;
-		return Estoque.find({_id: estoqueId}).fetch()[0];
-	},
-});
-
 Router.route('/usuario', function () {
 	this.render('usuarioList');
 });

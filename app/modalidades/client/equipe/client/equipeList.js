@@ -24,7 +24,7 @@ Template.equipeList.helpers({
 });
 
 Template.equipeList.events({
-	'click .excluir': function (event, templateInstance) {
+	'click .excluirAtleta': function (event, templateInstance) {
 		var self = this;
         var equipeId = templateInstance.data.equipe._id;
 		Meteor.call('equipe.atleta.excluir', equipeId, self.atletaId);

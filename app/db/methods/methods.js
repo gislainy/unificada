@@ -29,28 +29,6 @@ Meteor.methods({
             _id: atletaId
         });
     },
-    'estoque.adicionar': function (estoque) {
-        return Estoque.insert({
-                nome: estoque.nome,
-                quantidade: estoque.quantidade
-            });
-    },
-    'estoque.alterar': function (estoqueId, estoque) {
-        return Estoque.update({
-            _id: estoqueId
-        },
-            {
-                $set: {
-                    nome: estoque.nome,
-                    quantidade: estoque.quantidade
-                }
-            });
-    },
-    'estoque.excluir': function (estoqueId) {
-        return Estoque.remove({
-            _id: estoqueId
-        });
-    },
     'modalidade.adicionar': function (modalidade) {
         return Modalidade.insert({
             nome: modalidade.nome

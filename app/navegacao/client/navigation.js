@@ -42,12 +42,6 @@ _menu = [
 		icone: 'fa fa-user'
 	},
 	{
-		template: 'estoqueList',
-		rota: '/estoque',
-		nome: 'Estoque',
-		icone: 'fa fa-archive'
-	},
-	{
 		template: 'modalidadeList',
 		rota: '/modalidade',
 		nome: 'Modalidade',
