@@ -1,0 +1,31 @@
+<template name="equipeList">
+    {{#if equipeList}}
+    <table class="table table-hover no-margins table-responsive">
+        <thead>
+            <tr>
+                <th>Atleta</th>
+                <th>Titular</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each equipeList}}
+            <tr>
+                <td>{{nome}}</td>
+                <td>{{titular}}</td>
+                <td><i class="fa fa-trash-o excluir"></i></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{else}}
+    {{messagem}}
+        {{#if naoTemEquipe}}
+        <div class="row">
+            {{> equipeAdd}}
+        </div>
+        {{else}}
+            {{> equipeAtletaAdd}}
+        {{/if}}
+    {{/if}}
+</template>

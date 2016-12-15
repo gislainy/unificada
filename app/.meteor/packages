@@ -29,3 +29,6 @@ autoupdate
 #kadira:blaze-layout
 zimme:active-route
 iron:router
+momentjs:moment
+rzymek:moment-locale-pt-br
+tsega:bootstrap3-datetimepicker

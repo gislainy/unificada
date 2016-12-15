@@ -30,12 +30,6 @@ _menu = [
 		icone: 'fa fa-home',
 	},
 	{
-		template: 'agendaList',
-		rota: '/agenda',
-		nome: 'Agenda',
-		icone: 'fa fa-calendar'
-	},
-	{
 		template: 'atletaList',
 		rota: '/atleta',
 		nome: 'Atleta',

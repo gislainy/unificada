@@ -3,6 +3,7 @@ Template.atletaList.helpers({
 		return Atleta.find();
 	}
 });
+
 Template.atletaList.events({
 	'click .adicionar': function (event) {
 		Router.go('/atleta/add');

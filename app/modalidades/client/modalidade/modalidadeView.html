@@ -1,0 +1,29 @@
+<template name="modalidadeView">
+{{> pageHeading title='Edição de modalidade' category='modalidade'}}
+<div class="col-lg-12 wrapper wrapper-content">
+    <div class="tabs-container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> Jogos</a></li>
+            <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="true">Equipe</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane active">
+                <div class="panel-body">
+                        {{> jogoAdd this}}
+                        {{> jogoList this}}
+                </div>
+            </div>
+            <div id="tab-2" class="tab-pane">
+                <div class="panel-body">
+                    {{> equipeAtletaAdd this}}
+                    {{> equipeList this}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <button class="btn btn-sm btn-primary pull-right m-t-n-xs alterar">Editar nome da modalidade</button>
+    <button class="btn btn-sm btn-danger pull-right m-t-n-xs excluir">Excluir modalidade</button>
+</div>
+</template>

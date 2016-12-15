@@ -40,13 +40,30 @@ Router.route('/modalidade/add', function () {
 	this.render('modalidadeAdd');
 });
 
-Router.route('/modalidade/:_id', {
+Router.route('/modalidade/:_modalidadeId/edit', {
 	template: 'modalidadeEdit',
 	data: function () {
-		var atletaId = this.params._atletaId;
-		// return _atletas.filter(function (a) {
-		// 	return a._id === atletaId;
-		// })[0];
+		var modalidadeId = this.params._modalidadeId;
+		return Modalidade.find({_id: modalidadeId}).fetch()[0];
+	},
+});
+Router.route('/modalidade/:_modalidadeId', {
+	template: 'modalidadeView',
+	data: function () {
+		var modalidadeId = this.params._modalidadeId;
+		var equipe = Equipe.find({
+			modalidadeId
+		}).fetch()[0];
+		var jogos = Jogo.find({
+			modalidadeId
+		}).fetch();
+		var atletas = Atleta.find().fetch();
+		return {
+			jogos,
+			equipe,
+			modalidadeId,
+			atletas
+		};
 	},
 });
 

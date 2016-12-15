@@ -1,0 +1,30 @@
+<template name="jogoList">
+    {{#if jogosList}}
+    <table class="table table-hover no-margins table-responsive">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Local</th>
+                <th>Equipe</th>
+                <th>Responsável</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each jogosList}}
+            <tr>
+                <td><i class="fa fa-calendar-o"></i>{{data}}</td>
+                <td><i class="fa fa-clock-o"></i>{{horario}}</td>
+                <td>{{local}}</td>
+                <td>{{equipe}}</td>
+                <td>{{responsavel}}</td>
+                <td><i class="fa fa-trash-o excluir"></i></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    {{else}}
+    Sem jogos cadastrados para essa modalidade!
+    {{/if}}
+</template>
