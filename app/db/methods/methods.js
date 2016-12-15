@@ -5,10 +5,9 @@ Meteor.methods({
             matricula: atleta.matricula,
             curso: atleta.curso,
             cursoCod: atleta.cursoCod,
-            matricula: atleta.matricula,
             telefone: atleta.telefone,
             email: atleta.email,
-            image: atleta.image
+            image: atleta.image,
         });
     },
     'atleta.alterar': function (atletaId, atleta) {
@@ -18,9 +17,8 @@ Meteor.methods({
                 matricula: atleta.matricula,
                 curso: atleta.curso,
                 cursoCod: atleta.cursoCod,
-                matricula: atleta.matricula,
                 telefone: atleta.telefone,
-                email: atleta.email
+                email: atleta.email,
             }
         });
     },

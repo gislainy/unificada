@@ -54,3 +54,11 @@ Template.mainLayout.rendered = function(){
 
 
 };
+
+
+Template.mainLayout.helpers({
+    temUsuarioLogado() {
+        return Meteor.userId();
+    }
+
+});

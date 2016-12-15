@@ -32,3 +32,5 @@ iron:router
 momentjs:moment
 rzymek:moment-locale-pt-br
 tsega:bootstrap3-datetimepicker
+accounts-password
+accounts-ui

@@ -1,5 +1,5 @@
 <template name="mainLayout">
-
+    {{#if temUsuarioLogado}}
     <!-- Wrapper-->
     <div id="wrapper">
 
@@ -25,6 +25,9 @@
         {{> rightSidebar }}
 
     </div>
+    {{else}}
+        {{> blankLayout}}
+    {{/if}}
     <!-- End wrapper-->
 
 </template>
